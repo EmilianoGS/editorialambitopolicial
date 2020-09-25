@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Revista Ambito Policial</title>
+        <meta name="description" content="Publicación Independiente y de Interés General.Publicación Independiente y de Interés General. AL SERVICIO DE LA FAMILIA POLICIAL DE LA REPUBLICA ARGENTINA">
+        <link href="../dist/css/lightgallery.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            html{
+            	height: auto;
+            }
+            body{
+width:95%;
+margin: 0 auto;
+                background-color: #152836
+            }
+            .demo-gallery{
+            	width: 90%;
+            }
+            .demo-gallery > ul {
+              margin:0 auto;
+              margin-bottom: 0;
+              width: auto;
+              height: auto;
+            }
+            .demo-gallery > ul > li {
+                float: none; /*left*/
+                margin-bottom: 15px;
+                margin-right: 20px;
+                width: 200px;
+            }
+            .demo-gallery > ul > li a {
+              border: 3px solid #FFF;
+              border-radius: 3px;
+              display: block;
+              overflow: hidden;
+              position: relative;
+              float: left;
+            }
+            .demo-gallery > ul > li a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery > ul > li a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .justified-gallery > a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery .justified-gallery > a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .video .demo-gallery-poster img {
+              height: 48px;
+              margin-left: -24px;
+              margin-top: -24px;
+              opacity: 0.8;
+              width: 48px;
+            }
+            .demo-gallery.dark > ul > li a {
+              border: 3px solid #04070a;
+            }
+            .home .demo-gallery {
+              padding-bottom: 0px;
+            }
+            #nover{
+            	float:none;
+            	display: none;
+                visibility: hidden;
+            }
+            #ver{
+            	height: 397px;
+            	width: 100%;
+            	margin: 0 auto;
+            }
+            /*PARA CELULAR*/
+            @media all and (max-width: 599px) {
+                 html{
+                  padding-top:50px;
+                 }
+                .demo-gallery{
+                	width:100%;
+                }
+                #lightgallery{
+                  width:100%;
+                  padding: 0;
+                  list-style-type: none;
+                }
+                #clickaqui{
+                  width:285px;
+                  color: #fff;
+                  font-family: 'arial', sans-serif;
+                  margin: 15px auto;
+                }
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    <body class="home">
+         <div id="clickaqui">Click en la tapa para empezar a leer</div> 
+        <div class="demo-gallery">
+
+            <ul id="lightgallery" class="list-unstyled row">
+                <li id="ver" class="col-xs-6 col-sm-4 col-md-3"  data-src="img/tapa.jpg">
+                  <a href="">
+                        <img height="400"  width="290" class="img-responsive" src="img/tapa.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3" data-src="img/pag2.jpg" >
+                    <a href="">
+                        <img class="img-responsive" src="img/pag2.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"  data-src="img/pag3.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag3.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"data-src="img/pag4.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag4.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3" data-src="img/pag5.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag5.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag6.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag6.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag7.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag7.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag8.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag8.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag9.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag9.jpg">
+                    </a>
+                </li>
+                 <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag10.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag10.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag11.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag11.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag12.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag12.jpg">
+                    </a>
+                </li>
+                  <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag13.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag13.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag14.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag14.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag15.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag15.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag16.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag16.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag17.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag17.jpg">
+                    </a>
+                </li>
+                 <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag18.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag18.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag19.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag19.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag20.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag20.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag21.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag21.jpg">
+                    </a>
+                </li>
+                  <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag22.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag22.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag23.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag23.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag24.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag24.jpg">
+                    </a>
+                </li>
+                  <li id="nover"class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag25.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag25.jpg">
+                    </a>
+                </li>
+                <li id="nover"class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag26.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag26.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag27.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag27.jpg">
+                    </a>
+                </li>
+                <li id="nover"class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag28.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag28.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag29.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag29.jpg">
+                    </a>
+                </li>
+                 <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag30.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag30.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag31.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag31.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag32.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag32.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag33.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag33.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag34.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag34.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag35.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag35.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag36.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag36.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag37.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag37.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag38.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag38.jpg">
+                    </a>
+                </li>
+                 <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag39.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag39.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag40.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag40.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag41.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag41.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag42.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag42.jpg">
+                    </a>
+                </li>
+                     <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag43.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag43.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag44.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag44.jpg">
+                    </a>
+                </li>
+                 <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag45.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag45.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag46.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag46.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag47.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag47.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag48.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag48.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag49.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag49.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag50.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag50.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag51.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag51.jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="img/pag52.jpg">
+                    <a href="">
+                        <img class="img-responsive" src="img/pag52.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="../dist/js/lightgallery-all.min.js"></script>
+       
+    </body>
+</html>
