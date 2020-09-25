@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Revista Ambito Policial</title>
+         <meta charset="UTF-8" />
+        <meta name="description" content="Publicación Independiente y de Interés General.Publicación Independiente y de Interés General. AL SERVICIO DE LA FAMILIA POLICIAL DE LA REPUBLICA ARGENTINA">
+        <link href="../dist/css/lightgallery.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+          a{
+            text-decoration:none;
+          }
+            html{
+              padding-bottom: 100px;
+                height: auto;
+            }
+            body{
+              height:100%;
+width:100%;
+margin: 0 auto;
+                background-color: #152836
+            }
+            #seccionesarriba{
+    padding-left: 120px;
+  background-color: #fff;
+    
+    border-bottom: 1px solid #dedede;
+}
+#bannertitulo{
+  width:100%;
+  height:auto;
+  padding-top:15px;
+  background-color: #fafafa;
+  /*-webkit-box-shadow: 0px 10px 10px #696969;*/
+}
+#cabecera{
+  height:auto;
+  width: 65%;
+  padding: 0 60px 0 0;
+  margin:0 auto ;
+}
+#contacto{
+  margin: 0px 0px 0 auto;
+  text-align:center;
+    height: 44px;
+    float:right;
+}
+#contacto p{
+  font-family: 'Open-sans', sans-serif;
+    color:rgba(60,66,82,1);
+  margin: 0;
+  font-size:13px;
+  width:auto;
+  display:inline-block;
+  text-align:right;
+}
+#logo_titulo{
+  width: 200px;
+  height: 214px;
+  float:left;
+  padding:0px;
+  background-repeat: no-repeat;
+  background-image: url(../../imagenes/escudo.png);
+  background-size: contain;
+  
+}
+
+#seccionesarriba a:hover{
+opacity: 0.5;
+}
+#contenedor_titulo{
+  /*border: 7px double #000; /*rgba(238,145,6); */
+  height:auto;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 0px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ededed),color-stop(80%,#fafafa)); 
+        /* -webkit-box-shadow: 10px 0px 10px #696969; */
+        
+}
+#titulopag{
+
+ padding-left: 50px;
+
+ margin:0 auto;
+ background-color: rgba(208,141,24,1);
+}
+#titulopag h1{
+ font-family: 'Open-sans', sans-serif;
+  margin:0 auto;
+    width: 75%;
+    font-size: 45px;
+  font-style: italic;
+  color:#fff;
+}
+#fechahoy {
+    float: left;
+    padding-left: 80px;
+    font-family: 'Roboto', sans-serif;
+    color: #808080;
+}
+#clearboth{
+  clear: both;
+}
+#botonera{
+  height:auto;
+  padding-left: 222px;
+  margin:0;
+  background-color: #fff;
+  border-bottom: 2px solid #dedede;
+}
+#listasecciones{
+
+  float:left;
+  margin: 0;
+  padding:8px 0;
+  width: 50%;
+}
+#listasecciones li{
+   list-style-type: none;
+   color: #333333;
+   font-family: 'Heebo', sans-serif;
+   display:inline-block;
+   margin:0;
+border-radius: 5px;
+   padding: 5px 20px;
+}
+#listasecciones li:hover{
+background-color: #f5f5f5;
+}
+            .demo-gallery{
+                width: 90%;
+            }
+            .demo-gallery > ul {
+              margin:0 auto;
+              margin-bottom: 0;
+              width: auto;
+              height: auto;
+            }
+            .demo-gallery > ul > li {
+                float: none; /*left*/
+                margin-bottom: 15px;
+                margin-right: 20px;
+                width: 200px;
+            }
+            .demo-gallery > ul > li a {
+              border: 3px solid #FFF;
+              border-radius: 3px;
+              display: block;
+              overflow: hidden;
+              position: relative;
+              float: left;
+            }
+            .demo-gallery > ul > li a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery > ul > li a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .justified-gallery > a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery .justified-gallery > a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .video .demo-gallery-poster img {
+              height: 48px;
+              margin-left: -24px;
+              margin-top: -24px;
+              opacity: 0.8;
+              width: 48px;
+            }
+            .demo-gallery.dark > ul > li a {
+              border: 3px solid #04070a;
+            }
+            .home .demo-gallery {
+              
+              padding-bottom: 0px;
+            }
+            #nover{
+                float:none;
+                display: none;
+                visibility: hidden;
+            }
+            #ver{
+                /*height: 397px;*/
+                width: 50%;
+                list-style:none;
+                margin: 0 auto;
+            }
+            #clickaqui{
+              font-family: 'Arial', sans-serif;
+              width: 50%;
+              margin-top: 80px;
+              margin-right:auto;
+               margin-left:auto;
+               font-size: 25px;
+               color: #ffffff;
+            }
+
+             @media all and (min-width: 600px) and (max-width: 1200px){ /*8888888888888888888888888888888888888888888888888888888888888888*/
+                  #seccionesarriba{
+padding-left: 10px;
+}
+#fechahoy{
+  padding:0;
+}
+#contenedor_titulo{
+ 
+  height:auto;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 0px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ededed),color-stop(80%,#fafafa)); 
+      
+        
+}
+#logo_titulo{
+  width: 200px;
+  height: 214px;
+  float:left;
+  padding:0px;
+  background-repeat: no-repeat;
+  background-image: url(imagenes/escudo.png);
+  background-size: contain;
+  
+}
+#cabecera{
+  height:auto;
+  width: 90%;
+  padding: 0 60px 0 0;
+  margin:0 auto ;
+}
+#contacto{
+  margin: 0px 0px 0 auto;
+  text-align:center;
+    height: 44px;
+    float:right;
+}
+#contacto p{
+    color:rgba(60,66,82,1);
+  margin: 0;
+  font-size:13px;
+  width:auto;
+  display:inline-block;
+  text-align:right;
+}
+#bannertitulo{
+  width:100%;
+  height:auto;
+  padding-top:15px;
+  background-color: #fafafa;
+
+}
+#titulopag{
+
+ padding-left: 20px;
+
+ margin:0 auto;
+ background-color: rgba(208,141,24,1);
+}
+#titulopag h1{
+  margin:0 auto;
+    
+    font-size: 35px;
+  font-style: italic;
+  color:#fff;
+}
+#botonera{
+ padding: 0;
+}
+#botonera ul{
+  display:inline-block;
+  width: 100%;
+  text-align: left;
+  padding:0;
+  height: 40px;
+  margin:0px;
+  list-style-type: none;
+}
+#botonera li{
+  display:inline-block;
+  color:#333;
+  margin: 0 15px;
+  line-height: 30px;
+}
+             }
+            /*PARA CELULAR*/
+            @media all and (max-width: 599px) {
+                 html{
+                  padding-top:0px;
+                 }
+                .demo-gallery{
+                    width:100%;
+                }
+                #lightgallery{
+                  width:100%;
+                  padding: 0;
+                  list-style-type: none;
+                }
+                #clickaqui{
+                  width:285px;
+                  color: #fff;
+                  font-family: 'arial', sans-serif;
+                  margin: 15px auto;
+                }
+                #botonera{
+  padding: 0;
+}
+#titulopag{
+
+padding-left: 15px;
+}
+#contenedor2{
+  display:none;
+}
+#titulopag h1{
+  margin:0;
+  font-size: 25px;
+}
+#banner{
+float:none;
+padding-top: 10px;
+}
+#bannertitulo{
+  height: auto;
+}
+#cabecera{
+    width: 80%;
+    padding:0;
+}
+#logo_titulo{
+  width: 100%;
+  margin: 0 auto;
+  background-position: center;
+}
+
+#contacto{
+  height: auto;
+  width: auto;
+  font-size: 13px;
+  margin: 0 auto;
+  clear:both;
+  float:none;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#portadapag{
+width: 80%;
+}
+#contacto p{
+  
+  margin: 0 auto;
+  text-align: center;
+}
+#seccionesarriba{
+  background-color: #fff;
+    padding:0;
+margin: 0;
+    border-bottom: 1px solid #dedede;
+}
+#listasecciones{
+width: 100%;
+
+  margin: 0;
+  padding:0;
+}
+#listasecciones li{
+   text-align:center;
+   list-style-type: none;
+   color: #333333;
+   padding:10px 20px;
+   font-family: 'Heebo', sans-serif;
+   display: block;
+   border-bottom: 1px solid #dedede;
+   margin: 0;
+}
+#fechahoy{
+  padding-left: 10px;
+}
+            }
+            
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    <body class="home" style="margin-bottom:100px;">
+         <nav id="seccionesarriba">
+        
+        <script type="text/javascript">   
+var d = new Date();
+var dia=new Array(7);
+dia[0]="Domingo";
+dia[1]="Lunes";
+dia[2]="Martes";
+dia[3]="Miercoles";
+dia[4]="Jueves";
+dia[5]="Viernes";
+dia[6]="Sabado";
+var mes=new Array(12);
+mes[0]="Enero";
+mes[1]="Febrero";
+mes[2]="Marzo";
+mes[3]="Abril";
+mes[4]="Mayo";
+mes[5]="Junio";
+mes[6]="Julio";
+mes[7]="Agosto";
+mes[8]="Septiembre";
+mes[9]="Octubre";
+mes[10]="Noviembre";
+mes[11]="Diciembre";
+
+document.write("<div id='fechahoy'><p>"+ dia[d.getDay()]+ " ",+d.getDate()+" de ", mes[d.getMonth()]+" de ",+d.getFullYear()+"</p></div>");
+
+</script></div>
+        <div id="clearboth"></div>
+      </nav>
+        <div id="contenedor_titulo">
+          <div id="bannertitulo">
+            <div id="cabecera"> 
+                       <div id="logo_titulo"></div>
+                 <div id="contacto">
+                     <p>Lavalle 1330-2°Piso Oficina N°5-C1048AAH-CABA<br/>
+                                        Tel(011)4371-2503//<br>Mail: 
+                                        jclasalvia@editorialambitopolicial.com//<br>ambitopolicial@speedy.com.ar
+                                      </p>
+                                   </div>
+                                   <div id="clearboth"></div>
+            </div>
+                        <div id="clearboth"></div>
+            <div id="titulopag"><h1>EDITORIAL AMBITO POLICIAL</h1></div>
+          </div>
+          
+            <nav id="botonera">
+            <ul id="listasecciones">
+          <a href="../../index.php"><li>Inicio</li></a>
+          <a href="../../index.php?#contenidoprincipal"><li style="border-right: 1px solid #dedede; border-left: 1px solid #dedede">Revista Ambito Policial</li></a>
+          <a href="../../index.php?susc=1#suscripcion"><li>Suscripcion</li></a>
+        </ul>
+        <div id="clearboth"></div>
+            </nav>
+
+         </div>
+        <div class="demo-gallery">
+             <div id="clickaqui" style=""><p style="padding: 8px; border-radius: 10px;background-color:rgba(208,141,24,1); ">CARTILLA MÉDICA - TELÉFONOS ÚTILES - CABA</p> <br>Click en la tapa para empezar a leer</div> 
+
+            <ul id="lightgallery"  style="margin-top: 30px; " class="list-unstyled row">                
+
+
+                      
+                  <li id="ver" class="col-xs-6 col-sm-4 col-md-3"  data-src="imgcartillacaba/Cartillacaba (1).jpg">
+                  <a href="">
+                        <img width="250" class="img-responsive" src="imgcartillacaba/Cartillacaba (1).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3" data-src="imgcartillacaba/Cartillacaba (2).jpg" >
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (2).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"  data-src="imgcartillacaba/Cartillacaba (3).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (3).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"data-src="imgcartillacaba/Cartillacaba (4).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (4).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3" data-src="imgcartillacaba/Cartillacaba (5).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (5).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (6).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (6).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (7).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (7).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (8).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (8).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (9).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (9).jpg">
+                    </a>
+                </li>
+                 <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (10).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (10).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (11).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (11).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (12).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (12).jpg">
+                    </a>
+                </li>
+                  <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (13).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (13).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (14).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (14).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (15).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (15).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (16).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (16).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (17).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (17).jpg">
+                    </a>
+                </li>
+                 <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (18).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (18).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (19).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (19).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (20).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (20).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (21).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (21).jpg">
+                    </a>
+                </li>
+                  <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (22).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (22).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (23).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (23).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (24).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (24).jpg">
+                    </a>
+                </li>
+                  <li id="nover"class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (25).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (25).jpg">
+                    </a>
+                </li>
+                <li id="nover"class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (26).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (26).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (27).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (27).jpg">
+                    </a>
+                </li>
+                <li id="nover"class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (28).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (28).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (29).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (29).jpg">
+                    </a>
+                </li>
+                 <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (30).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (30).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (31).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (31).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (32).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (32).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (33).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (33).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (34).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (34).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (35).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (35).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (36).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (36).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (37).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (37).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (38).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (38).jpg">
+                    </a>
+                </li>
+                 <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (39).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (39).jpg">
+                    </a>
+                </li>
+                <li id="nover" class="col-xs-6 col-sm-4 col-md-3"   data-src="imgcartillacaba/Cartillacaba (40).jpg">
+                    <a href="">
+                        <img class="img-responsive" src="imgcartillacaba/Cartillacaba (40).jpg">
+                    </a>
+ 
+
+
+
+          
+  
+
+      </ul>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="../dist/js/lightgallery-all.min.js"></script>
+       
+    </body>
+</html>
