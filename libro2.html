@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js demo-1">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+        
+		<title>Editorial Ambito Policial</title>
+		<meta name="description" content="Bookblock: A Content Flip Plugin - Demo 1" />
+		<meta name="keywords" content="javascript, jquery, plugin, css3, flip, page, 3d, booklet, book, perspective" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<!-- custom demo style -->
+		<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+		
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+		<link rel="icon" href="imagenes/logo_titulo.ico">
+		<script src="js/modernizr.custom.js"></script>
+		
+					<style>
+		/* these styles are for the demo, but are not required for the plugin */
+		.zoom {
+			display:inline-block;
+			position: relative;
+		}
+		
+		/* magnifying glass icon */
+		.zoom:after {
+			content:'';
+			display:block; 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+			background:url(icon.png);
+		}
+
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+		#ex2 img:hover { cursor: url(grab.cur), default; }
+		#ex2 img:active { cursor: url(grabbed.cur), default; }
+
+
+
+
+body{
+	background-color: #333;
+}
+#contenidoprincipal{
+	margin:0;
+	padding:0;
+}		
+	.Pagina {
+	position: relative;
+    height: 100%;
+    width: 50%;
+    float:left;
+	/* 'Shrink-wrap' the element */
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+#contenedor2{
+	width: auto;
+	float:right;
+	margin-left: 80px;
+}
+#imagenesizq{
+	float:right;
+	height: 100%;
+	width: 100%;
+}
+#primerimagenesizq{
+	float:right;
+	height: 100%;
+	width: 100%;
+}
+#ultiderecha{
+	float:right;
+	height: 100%;
+	width: 100%;
+}
+#imagenesder{
+	float:right;
+	height: 100%;
+	width: 100%;
+}
+#imagenesizq:hover{
+	width: 685px;
+	height: 1000px;
+	position:relative;
+}
+/*#imagenesder:hover{
+	width: 685px;
+	height: 1000px;
+	position:relative;
+}*/
+#contenedor_titulo{
+  /*border: 7px double #000; /*rgba(238,145,6); */
+  height:auto;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 0px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ededed),color-stop(80%,#fafafa)); 
+				/* -webkit-box-shadow: 10px 0px 10px #696969; */
+				
+}
+
+#titulorevista{
+	font-family: 'geneva', sans-serif ;
+	width: 373px;
+	height: 220px;
+    margin: 0px auto;
+    text-align:center;
+    color: #49256d;
+}
+#titulorevista h1{
+	margin:0;
+	margin-top: 20px;
+	font-size: 25px;
+}
+#titulorevista h4, h5{
+	display:inline;
+}
+#titulorevista p{
+	font-style: italic;
+	font-size: 10px
+}
+#pasadorpag{
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-top: 1px solid #6e6e6e ;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#a8a8a8),color-stop(75%,#d1d1d1));
+	margin-bottom: 60px;
+}
+#revista{
+	padding:40px 20px;
+	background-color: #333;
+}
+#clearboth{
+	clear:both;
+}
+#imagenlibro2{
+	 height: 305.5px;
+	width: 194.4px;
+	display: block;
+	margin: 20px 30px 30px;
+	background-repeat: no-repeat;
+	background-image: url(imagenes/imglibro2.jpg);
+	background-size:cover;
+	float: right;
+}
+#contacto{
+	margin: 0px 50px 0 auto;
+	text-align:center;
+    height: 44px;
+    float:right;
+}
+#contacto p{
+    color:rgba(60,66,82,1);
+	margin: 0;
+	width:auto;
+	display:inline-block;
+	text-align:right;
+}
+
+#textoinformativo{
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	position:absolute;
+}
+#mas{
+	margin-bottom: 15px;
+	padding-left: 15px;
+}
+#visitas{
+	padding-top: 40px;
+}
+#contenedor_cel{
+	display:none;
+}
+@media all and (max-width: 599px) {
+
+#titulopag{
+
+padding-left: 15px;
+}
+#titulopag h1{
+	margin:0;
+	font-size: 25px;
+}
+#bannertitulo{
+	height: auto;
+}
+#cabecera{
+    width: 80%;
+    padding:0;
+}
+#logo_titulo{
+	width: 100%;
+	margin: 0 auto;
+	background-position: center;
+}
+
+#contacto{
+	height: auto;
+	width: auto;
+	font-size: 13px;
+	margin: 0 auto;
+	clear:both;
+	float:none;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+#contacto p{
+	
+	margin: 0 auto;
+	text-align: center;
+}
+#contenedor{
+	display:none;
+}
+#contenedor_cel{
+	width:100%;
+	display:inline-block;
+	height:auto;
+    margin-top: 50px;
+}
+#versioncel{
+	display: inline-block;
+	height: 650px;
+	width: 100%;
+	padding:0 0px;
+	margin-top: 20px;
+}
+#revistacel{
+	background-color:#333;
+	margin-top: 50px;
+}
+#titulorevista{
+	width:90%;
+}
+#sincontenedor3{
+	display:none
+}
+#sincontenedor2{
+	display:none
+}
+#sincontenedor{
+	display:none;
+}
+}/*FIN DEL @media*/
+		</style>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script src='jquery.zoom.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('#ex1').zoom();
+			$('#ex2').zoom({ on:'grab' });
+			$('#ex3').zoom({ on:'click' });			 
+			$('#ex4').zoom({ on:'toggle' });
+		});
+	</script>
+</head>			
+<body>
+	<div id="contenedor2">
+			<div id="titulorevista"><h1>Guía Útil para Padres<br>Hacia un mundo sin adicciones</h1><br><h5>Publicación Independiente y de Interés General<br>
+				EDITADA POR</h5> <h4>EDITORIAL AMBITO POLICIAL<h4> <br><h5>UNA EDITORIAL CON VOCACIÓN DE SERVICIO</h5><br>
+					<p>AL SERVICIO DE LA FAMILIA POLICIAL DE LA REPUBLICA ARGENTINA</p></div>
+			<div class="container">
+				  	
+     
+			<!-- Top Navigation -->
+			<div class="main clearfix">
+				<div class="bb-custom-wrapper">
+						<nav id="pasadorpag">
+						<a id="bb-nav-first" href="#" ><!--First page--><img height="30" title="Primera página" width="30" src="imagenes/flechaprimera.png"/></a>
+						<a id="bb-nav-prev" href="#" ><img height="30" title="Página anterior" width="30" src="imagenes/flechaizq.png"/><!--Previous--></a>
+						<a id="bb-nav-next" href="#" ><img height="30" title="Página siguiente" width="30" src="imagenes/flechader.png"/><!--Next--></a>
+						<a id="bb-nav-last" href="#" ><img height="30" title="Última página" width="30" src="imagenes/flechaultimo.png"/><!--Last page--></a>
+					</nav>
+				<div id="revista">
+					<div id="bb-bookblock" class="bb-bookblock">
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					            
+					          	
+
+					          <img src="imagenes/antetapas.jpg" id="imagenesizq" alt="image02"/>
+				             </div>
+				             <div class="Pagina">
+				              <span class='zoom' id='ex3'>
+					          <img src="imagenes/tapa.jpg" width="481" height="658" alt="image02"/>
+				              </span>
+				             </div>  
+							</div>
+							<div class="bb-item">
+							<div class="Pagina">
+				              <span class='zoom' id='ex3'>
+					          <img src="imagenes/pag2.jpg" width="481" height="658" alt="image02"/>
+				               </span>
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag3.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag4.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag5.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag6.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag7.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag8.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag9.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag10.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag11.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag12.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag13.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag14.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag15.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag16.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag17.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag18.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag19.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag20.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag21.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag22.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag23.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag24.jpg" id="imagenesizq" alt="image02"/>
+				              
+				             </div>
+				             <div class="Pagina">
+				              
+					          <img src="imagenes/pag25.jpg" width="685" height="1000" id="imagenesder" alt="image02"/>
+				             
+				             </div>  
+						</div>	
+						<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag26.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag27.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag28.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag29.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag30.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag31.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag32.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag33.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag34.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag35.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag36.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag37.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+						<div class="bb-item">
+							<div class="Pagina">
+				              
+					          <img src="imagenes/pag38.jpg" width="480" height="658" id="imagenes" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				       
+					          <img src="imagenes/pag39.jpg" width="480" height="658" id="#ultiderecha" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag40.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag41.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag42.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag43.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag44.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag45.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag46.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag47.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag48.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag49.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag50.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/pag51.jpg"id="imagenesder" alt="image02"/>
+				             
+				             </div>
+						</div>
+							<div class="bb-item">
+                             <div class="Pagina">
+				          
+					          <img src="imagenes/pag52.jpg" id="imagenesizq" alt="image02"/>
+				             
+				             </div>
+				             <div class="Pagina">
+				             
+					          <img src="imagenes/primerapag.jpg"id="ultiderecha" alt="image02"/>
+				             
+				             </div>
+						</div>
+							
+						
+						
+					</div>
+				</div> <!--Fin div Revista-->	
+							 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+                        
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!--fin contenedor-->
+
+					
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script>
+			var Page = (function() {
+				
+				var config = {
+						$bookBlock : $( '#bb-bookblock' ),
+						$navNext : $( '#bb-nav-next' ),
+						$navPrev : $( '#bb-nav-prev' ),
+						$navFirst : $( '#bb-nav-first' ),
+						$navLast : $( '#bb-nav-last' )
+					},
+					init = function() {
+						config.$bookBlock.bookblock( {
+							speed : 800,
+							shadowSides : 0.8,
+							shadowFlip : 0.7
+						} );
+						initEvents();
+					},
+					initEvents = function() {
+						
+						var $slides = config.$bookBlock.children();
+
+						// add navigation events
+						config.$navNext.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'next' );
+							return false;
+						} );
+
+						config.$navPrev.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'prev' );
+							return false;
+						} );
+
+						config.$navFirst.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'first' );
+							return false;
+						} );
+
+						config.$navLast.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'last' );
+							return false;
+						} );
+						
+						// add swipe events
+						$slides.on( {
+							'swipeleft' : function( event ) {
+								config.$bookBlock.bookblock( 'next' );
+								return false;
+							},
+							'swiperight' : function( event ) {
+								config.$bookBlock.bookblock( 'prev' );
+								return false;
+							}
+						} );
+
+						// add keyboard events
+						$( document ).keydown( function(e) {
+							var keyCode = e.keyCode || e.which,
+								arrow = {
+									left : 37,
+									up : 38,
+									right : 39,
+									down : 40
+								};
+
+							switch (keyCode) {
+								case arrow.left:
+									config.$bookBlock.bookblock( 'prev' );
+									break;
+								case arrow.right:
+									config.$bookBlock.bookblock( 'next' );
+									break;
+							}
+						} );
+					};
+
+					return { init : init };
+
+			})();
+		</script>
+		<script>
+				Page.init();
+		</script>
+
+
+		
+	</body>
+</html>
