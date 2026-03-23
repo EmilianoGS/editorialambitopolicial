@@ -1,1 +1,2 @@
-Revista digital interactiva — Publicación institucional PFA  Sitio web para una revista institucional de la Policía Federal Argentina. Incluye revista digital con efecto de paso de página implementado con BookBlock, diseño responsive y navegación por secciones
+Revista digital interactiva — Publicación institucional PFA  
+  Sitio web para una revista institucional de la Policía Federal Argentina. Incluye revista digital con efecto de paso de página implementado con BookBlock, diseño responsive y navegación por secciones
